@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora web</title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>     
+
+    <body>
+
+        <h1>Calculadora Web     </h1>
+        <br>
+
+        <div class="contenedorCalculadora" >
+            
+            <div class="cuerpoCalculadora">
+
+                <div class="contenidoCalculadora">
+                    
+                <div class="historialNumeros" >
+                    <label class="numeroAHistorial" id="numeroAHistorial"></label>                                            
+                    <label class="operadorHistorial" id="operadorHistorial"></label>
+                    <label class="numeroBHistorial"  id="numeroBHistorial"></label>
+                </div>
+
+                <div class="pantalla">
+                    <input type="text" class="pantallaPrincipal" id="pantallaPrincipal">
+                    <label class="signoOperacion" id="signoOperacion"></label>
+                </div>
+
+                <div class="contenedorBotones">
+                    <input   type="button" value="1" name="btnNumero">
+                    <input   type="button" value="2" name="btnNumero">
+                    <input   type="button" value="3" name="btnNumero">
+                    <input   type="button" value="+" id="btnMas" onclick = "Suma()">
+                    <br>
+                    <input type="button" value="4" name="btnNumero">
+                    <input type="button" value="5" name="btnNumero">
+                    <input type="button" value="6" name="btnNumero">
+                    <input type="button" value="-" id="btnMenos" onclick = "Resta()">
+                    <br>
+                    <input type="button" value="7" name="btnNumero">
+                    <input type="button" value="8" name="btnNumero">
+                    <input type="button" value="9" name="btnNumero">
+                    <input type="button" value="x" id="btnMulti" onclick = "Multiplicacion()">
+                    <br>
+                    <input type="button" value="0" name="btnNumero">
+                    <input type="button" value="." name="btnNumero" class="btnPunto">
+                    <input type="button" value="C"  onclick="limpiar()">
+                    <input type="button" value="/" id="btnDiv"  onclick = "Division()">
+                    <br>
+                    <input type="button" value="00" name="btnNumero" class="dobleCero">
+                    <input type="button" value="="  class="btmIgual" id="btnIgual" onclick="resultadoF()">                
+                </div>        
+
+            </div>
+
+        </div>
+
+    </body>
+
+    <script type="text/javascript" src="logicaCalc.js"></script>
+
+</html>
